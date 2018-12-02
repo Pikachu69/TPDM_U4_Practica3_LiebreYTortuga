@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pista"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/pista"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/liebre"
+            android:background="@drawable/liebre"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tortuga"
+            android:layout_toRightOf="@+id/liebre"
+            android:background="@drawable/tortuga"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:textSize="20dp"
+            android:background="@color/colorAccent"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/iniciar"/>
+    </LinearLayout>
+
+</LinearLayout>
